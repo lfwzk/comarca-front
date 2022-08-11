@@ -30,275 +30,291 @@ class Topbar extends Component {
       navLinks: [
         //Note : each child and nested child must have unique id
         { id: 1, title: "Home", link: "/" },
+         {
+           id: 2,
+           title: "Servicios",  
+           link: "/index-servicios"
+         },
+        //  {
+        //    id: 2,
+        //    title: "Blog",  
+        //    link: "/#",
+        //    isMegaMenu: true,
+        //    isOpenSubMenu: false,
+        //    child: [
+        //      { id: 1, title: "Agency", link: "/index-agency" },
+        //      { id: 3, title: "Marketing", link: "/index-marketing" },
+        //      { id: 4, title: "Services", link: "/index-services" },
+        //      { id: 12, title: "Business", link: "/index-business" },
+        //      { id: 19, title: "Developer", link: "/index-developer", isDark: false },
+        //      { id: 17, title: "Servicios", link: "/index-servicios", isDark: false },
+        //      { id: 32, title: "Course", link: "/index-course" },
+        //      { id: 33, title: "Forums", link: "/index-forums", isDark: false },
+        //      { id: 31, title: "Event", link: "/index-event" },
+        //      { id: 43, title: "Portfolio", link: "/index-portfolio" },
+        //      { id: 44, title: "Digital Agency", link: "/index-digital-agency" },
+        //      { id: 42, title: "Customer", link: "/index-customer" },
+        //    ],
+        //  },
+        // {
+        //   id: 3,
+        //   title: "Pages",
+        //   link: "/#",
+        //   isOpenSubMenu: false,
+        //   child: [
+        //     {
+        //       id: 4,
+        //       title: "Company",
+        //       link: "/#",
+        //       isOpenNestedSubMenu: false,
+        //       nestedChild: [
+        //         { title: "About Us", link: "/page-aboutus" },
+        //         { title: "About Us Two", link: "/page-aboutus-two" },
+        //         { title: "History", link: "/page-history" },
+        //         { title: "Services", link: "page-services" },
+        //         { title: "Pricing", link: "/page-pricing" },
+        //         { title: "Team", link: "/page-team" },
+        //       ],
+        //     },
+        //     {
+        //       id: 5,
+        //       title: "Account",
+        //       link: "/#",
+        //       isOpenNestedSubMenu: false,
+        //       nestedChild: [
+        //         { title: "Profile", link: "/page-profile", isupdatePage: true },
+        //         { title: "Members", link: "/page-members", isNewPage: true },
+        //         // { title: "Works", link: "/page-works", isNewPage: true },
+        //         // { title: "Messages", link: "/page-messages", isNewPage: true },
+        //         // { title: "Payments", link: "/page-payments", isNewPage: true },
+        //         // { title: "Account Setting", link: "/page-profile-edit" },
+        //         // { title: "Invoice", link: "/page-invoice" },
+        //       ],
+        //     },
+        //     // {
+        //     //   id: 6,
+        //     //   title: "Shop",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     {
+        //     //       title: "Products Grids",
+        //     //       link: "/shop-grids",
+        //     //     },
+        //     //     {
+        //     //       title: "Products List",
+        //     //       link: "/shop-lists",
+        //     //       isNewPage: true,
+        //     //     },
+        //     //     {
+        //     //       title: "Product Details",
+        //     //       link: "/shop-product-detail",
+        //     //     },
+        //     //     { title: "Shop Cart", link: "/shop-cart" },
+        //     //     {
+        //     //       title: "Checkouts",
+        //     //       link: "/shop-checkouts",
+        //     //     },
+        //     //     {
+        //     //       title: "My Account",
+        //     //       link: "/shop-myaccount",
+        //     //     },
+        //     //   ],
+        //     // },
+        //     {
+        //       id: 7,
+        //       title: "Help center",
+        //       link: "/#",
+        //       isOpenNestedSubMenu: false,
+        //       nestedChild: [
+        //         // {
+        //         //   title: "Helpcenter",
+        //         //   link: "/helpcenter-overview",
+        //         //   isNewPage: true,
+        //         // },
+        //         { title: "Faqs", link: "/helpcenter-faqs", isNewPage: true },
+        //         {
+        //           title: "Guides",
+        //           link: "/helpcenter-guides",
+        //           isNewPage: true,
+        //         },
+        //         {
+        //           title: "Support Call",
+        //           link: "/helpcenter-support-request",
+        //           isNewPage: true,
+        //         },
+        //       ],
+        //     },
+        //     // {
+        //     //   id: 8,
+        //     //   title: "Forums",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Overview", link: "/forums" },
+        //     //     { title: "Forums Topic", link: "/forums-topic" },
+        //     //     { title: "Forums Comments", link: "/forums-comments" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 9,
+        //     //   title: "Email Template",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Confirmation", link: "/email-confirmation" },
+        //     //     { title: "Reset Password", link: "/email-password-reset" },
+        //     //     { title: "Alert", link: "/email-alert" },
+        //     //     { title: "Invoice", link: "/email-invoice" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 10,
+        //     //   title: "Careers",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Jobs", link: "/page-job" },
+        //     //     { title: "Jobs - Sidebar", link: "/page-jobs-sidebar" },
+        //     //     { title: "Job Detail", link: "/page-job-detail" },
+        //     //     { title: "Job Apply", link: "/page-job-apply" },
+        //     //     {
+        //     //       title: "Company Listing",
+        //     //       link: "/page-job-company-list",
+        //     //       isNewPage: true,
+        //     //     },
+        //     //     { title: "Company Detail", link: "/page-job-company" },
+        //     //     {
+        //     //       title: "Candidate Listing",
+        //     //       link: "/page-job-candidate-list",
+        //     //       isNewPage: true,
+        //     //     },
+        //     //     { title: "Candidate Details", link: "/page-job-candidate" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 11,
+        //     //   title: "Blog",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Blog Grid", link: "/page-blog-grid" },
+        //     //     { title: "Blog with Sidebar", link: "/page-blog-sidebar" },
+        //     //     { title: "Blog Listing", link: "/page-blog-list" },
+        //     //     {
+        //     //       title: "Blog List & Sidebar",
+        //     //       link: "/page-blog-list-sidebar",
+        //     //     },
+        //     //     { title: "Blog Detail", link: "/page-blog-detail" },
+        //     //     { title: "Blod Detail 2", link: "/page-blog-detail-two" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 12,
+        //     //   title: "Case Study",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "All Cases", link: "/page-all-cases" },
+        //     //     { title: "Case Detail", link: "/page-case-detail" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 13,
+        //     //   title: "Works",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Works Modern", link: "/page-work-modern" },
+        //     //     { title: "Works Classic", link: "/page-work-classic" },
+        //     //     { title: "Works Grid", link: "/page-work-grid" },
+        //     //     { title: "Works Masonry", link: "/page-work-masonry" },
+        //     //     { title: "Work Detail", link: "/page-work-detail" },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 14,
+        //     //   title: "Auth Pages",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Login", link: "/auth-login" },
+        //     //     { title: "Login Cover", link: "/auth-cover-login" },
+        //     //     { title: "Login Simple", link: "/auth-login-three" },
+        //     //     { title: "Signup", link: "/auth-signup" },
+        //     //     { title: "Signup Cover", link: "/auth-cover-signup" },
+        //     //     { title: "Signup Simple", link: "/auth-signup-three" },
+        //     //     { title: "Reset Password", link: "/auth-re-password" },
+        //     //     {
+        //     //       title: "Reset Password Cover",
+        //     //       link: "/auth-cover-re-password",
+        //     //     },
+        //     //     {
+        //     //       title: "Reset Password Simple",
+        //     //       link: "/auth-re-password-three",
+        //     //     },
+        //     //   ],
+        //     // },
+        //     {
+        //       id: 15,
+        //       title: "Utility",
+        //       link: "/#",
+        //       isOpenNestedSubMenu: false,
+        //       nestedChild: [
+        //         { title: "Terms of Services", link: "/page-terms" },
+        //         { title: "Privacy Policy", link: "/page-privacy" },
+        //       ],
+        //     },
+        //     // {
+        //     //   id: 16,
+        //     //   title: "Special",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Coming Soon", link: "/page-comingsoon" },
+        //     //     { title: "Coming Soon Two", link: "/page-comingsoon2" },
+        //     //     { title: "Maintenance", link: "/page-maintenance" },
+        //     //     { title: "Error", link: "/page-error" },
+        //     //     { title: "Thank you", link: "/page-thankyou", isNewPage: true },
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: 17,
+        //     //   title: "Contact",
+        //     //   link: "/#",
+        //     //   isOpenNestedSubMenu: false,
+        //     //   nestedChild: [
+        //     //     { title: "Contact Detail", link: "/page-contact-detail" },
+        //     //     { title: "Contact One", link: "/page-contact-one" },
+        //     //     { title: "Contact Two", link: "/page-contact-two" },
+        //     //     { title: "Contact Three", link: "/page-contact-three" },
+        //     //   ],
+        //     // },
+        //   ],
+        // },
         {
-          id: 2,
-          title: "Blog",  
-          link: "/#",
-          isMegaMenu: true,
-          isOpenSubMenu: false,
-          child: [
-            { id: 1, title: "Agency", link: "/index-agency" },
-            { id: 3, title: "Marketing", link: "/index-marketing" },
-            { id: 4, title: "Services", link: "/index-services" },
-            { id: 12, title: "Business", link: "/index-business" },
-            { id: 19, title: "Developer", link: "/index-developer", isDark: false },
-            { id: 17, title: "Servicios", link: "/index-servicios", isDark: false },
-            { id: 32, title: "Course", link: "/index-course" },
-            { id: 33, title: "Forums", link: "/index-forums", isDark: false },
-            { id: 31, title: "Event", link: "/index-event" },
-            { id: 43, title: "Portfolio", link: "/index-portfolio" },
-            { id: 44, title: "Digital Agency", link: "/index-digital-agency" },
-            { id: 42, title: "Customer", link: "/index-customer" },
-          ],
-        },
+          id:3, title: "Grupo", link: "/index-course", },
+        // {
+        //   id: 4,
+        //   title: "Contact",
+        //   link: "/#",
+        //   isOpenSubMenu: false,
+        //   child: [
+        //     { title: "Contact Detail", link: "/page-contact-detail" },
+        //     { title: "Contact One", link: "/page-contact-one" },
+        //     // { title: "Contact Two", link: "/page-contact-two" },
+        //     // { title: "Contact Three", link: "/page-contact-three" },
+        //   ],
+        // },
         {
-          id: 3,
-          title: "Pages",
-          link: "/#",
-          isOpenSubMenu: false,
-          child: [
-            {
-              id: 4,
-              title: "Company",
-              link: "/#",
-              isOpenNestedSubMenu: false,
-              nestedChild: [
-                { title: "About Us", link: "/page-aboutus" },
-                { title: "About Us Two", link: "/page-aboutus-two" },
-                { title: "History", link: "/page-history" },
-                { title: "Services", link: "page-services" },
-                { title: "Pricing", link: "/page-pricing" },
-                { title: "Team", link: "/page-team" },
-              ],
-            },
-            {
-              id: 5,
-              title: "Account",
-              link: "/#",
-              isOpenNestedSubMenu: false,
-              nestedChild: [
-                { title: "Profile", link: "/page-profile", isupdatePage: true },
-                { title: "Members", link: "/page-members", isNewPage: true },
-                // { title: "Works", link: "/page-works", isNewPage: true },
-                // { title: "Messages", link: "/page-messages", isNewPage: true },
-                // { title: "Payments", link: "/page-payments", isNewPage: true },
-                // { title: "Account Setting", link: "/page-profile-edit" },
-                // { title: "Invoice", link: "/page-invoice" },
-              ],
-            },
-            // {
-            //   id: 6,
-            //   title: "Shop",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     {
-            //       title: "Products Grids",
-            //       link: "/shop-grids",
-            //     },
-            //     {
-            //       title: "Products List",
-            //       link: "/shop-lists",
-            //       isNewPage: true,
-            //     },
-            //     {
-            //       title: "Product Details",
-            //       link: "/shop-product-detail",
-            //     },
-            //     { title: "Shop Cart", link: "/shop-cart" },
-            //     {
-            //       title: "Checkouts",
-            //       link: "/shop-checkouts",
-            //     },
-            //     {
-            //       title: "My Account",
-            //       link: "/shop-myaccount",
-            //     },
-            //   ],
-            // },
-            {
-              id: 7,
-              title: "Help center",
-              link: "/#",
-              isOpenNestedSubMenu: false,
-              nestedChild: [
-                // {
-                //   title: "Helpcenter",
-                //   link: "/helpcenter-overview",
-                //   isNewPage: true,
-                // },
-                { title: "Faqs", link: "/helpcenter-faqs", isNewPage: true },
-                {
-                  title: "Guides",
-                  link: "/helpcenter-guides",
-                  isNewPage: true,
-                },
-                {
-                  title: "Support Call",
-                  link: "/helpcenter-support-request",
-                  isNewPage: true,
-                },
-              ],
-            },
-            // {
-            //   id: 8,
-            //   title: "Forums",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Overview", link: "/forums" },
-            //     { title: "Forums Topic", link: "/forums-topic" },
-            //     { title: "Forums Comments", link: "/forums-comments" },
-            //   ],
-            // },
-            // {
-            //   id: 9,
-            //   title: "Email Template",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Confirmation", link: "/email-confirmation" },
-            //     { title: "Reset Password", link: "/email-password-reset" },
-            //     { title: "Alert", link: "/email-alert" },
-            //     { title: "Invoice", link: "/email-invoice" },
-            //   ],
-            // },
-            // {
-            //   id: 10,
-            //   title: "Careers",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Jobs", link: "/page-job" },
-            //     { title: "Jobs - Sidebar", link: "/page-jobs-sidebar" },
-            //     { title: "Job Detail", link: "/page-job-detail" },
-            //     { title: "Job Apply", link: "/page-job-apply" },
-            //     {
-            //       title: "Company Listing",
-            //       link: "/page-job-company-list",
-            //       isNewPage: true,
-            //     },
-            //     { title: "Company Detail", link: "/page-job-company" },
-            //     {
-            //       title: "Candidate Listing",
-            //       link: "/page-job-candidate-list",
-            //       isNewPage: true,
-            //     },
-            //     { title: "Candidate Details", link: "/page-job-candidate" },
-            //   ],
-            // },
-            // {
-            //   id: 11,
-            //   title: "Blog",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Blog Grid", link: "/page-blog-grid" },
-            //     { title: "Blog with Sidebar", link: "/page-blog-sidebar" },
-            //     { title: "Blog Listing", link: "/page-blog-list" },
-            //     {
-            //       title: "Blog List & Sidebar",
-            //       link: "/page-blog-list-sidebar",
-            //     },
-            //     { title: "Blog Detail", link: "/page-blog-detail" },
-            //     { title: "Blod Detail 2", link: "/page-blog-detail-two" },
-            //   ],
-            // },
-            // {
-            //   id: 12,
-            //   title: "Case Study",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "All Cases", link: "/page-all-cases" },
-            //     { title: "Case Detail", link: "/page-case-detail" },
-            //   ],
-            // },
-            // {
-            //   id: 13,
-            //   title: "Works",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Works Modern", link: "/page-work-modern" },
-            //     { title: "Works Classic", link: "/page-work-classic" },
-            //     { title: "Works Grid", link: "/page-work-grid" },
-            //     { title: "Works Masonry", link: "/page-work-masonry" },
-            //     { title: "Work Detail", link: "/page-work-detail" },
-            //   ],
-            // },
-            // {
-            //   id: 14,
-            //   title: "Auth Pages",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Login", link: "/auth-login" },
-            //     { title: "Login Cover", link: "/auth-cover-login" },
-            //     { title: "Login Simple", link: "/auth-login-three" },
-            //     { title: "Signup", link: "/auth-signup" },
-            //     { title: "Signup Cover", link: "/auth-cover-signup" },
-            //     { title: "Signup Simple", link: "/auth-signup-three" },
-            //     { title: "Reset Password", link: "/auth-re-password" },
-            //     {
-            //       title: "Reset Password Cover",
-            //       link: "/auth-cover-re-password",
-            //     },
-            //     {
-            //       title: "Reset Password Simple",
-            //       link: "/auth-re-password-three",
-            //     },
-            //   ],
-            // },
-            {
-              id: 15,
-              title: "Utility",
-              link: "/#",
-              isOpenNestedSubMenu: false,
-              nestedChild: [
-                { title: "Terms of Services", link: "/page-terms" },
-                { title: "Privacy Policy", link: "/page-privacy" },
-              ],
-            },
-            // {
-            //   id: 16,
-            //   title: "Special",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Coming Soon", link: "/page-comingsoon" },
-            //     { title: "Coming Soon Two", link: "/page-comingsoon2" },
-            //     { title: "Maintenance", link: "/page-maintenance" },
-            //     { title: "Error", link: "/page-error" },
-            //     { title: "Thank you", link: "/page-thankyou", isNewPage: true },
-            //   ],
-            // },
-            // {
-            //   id: 17,
-            //   title: "Contact",
-            //   link: "/#",
-            //   isOpenNestedSubMenu: false,
-            //   nestedChild: [
-            //     { title: "Contact Detail", link: "/page-contact-detail" },
-            //     { title: "Contact One", link: "/page-contact-one" },
-            //     { title: "Contact Two", link: "/page-contact-two" },
-            //     { title: "Contact Three", link: "/page-contact-three" },
-            //   ],
-            // },
+          id: 4, title: "Blog", link: "/forums",
+          isOpenNestedSubMenu: false,
+          nestedChild: [
+            { title: "Overview", link: "/forums" },
+            { title: "Forums Topic", link: "/forums-topic" },
+            { title: "Forums Comments", link: "/forums-comments" },
           ],
-        },
-        {
-          id: 4,
-          title: "Contact",
-          link: "/#",
-          isOpenSubMenu: false,
-          child: [
-            { title: "Contact Detail", link: "/page-contact-detail" },
-            { title: "Contact One", link: "/page-contact-one" },
-            // { title: "Contact Two", link: "/page-contact-two" },
-            // { title: "Contact Three", link: "/page-contact-three" },
-          ],
-        },
+        }
       ],
       wishlistModal: false,
       dropdownIsOpen: false,
@@ -754,7 +770,7 @@ class Topbar extends Component {
                     </li>
                     <li className="list-inline-item mb-0">
                       <Dropdown
-                        color="primary"
+                        color="danger"
                         isOpen={this.state.dropdownIsOpen}
                         toggle={this.toggleDropdownIsOpen}
                       >
@@ -807,11 +823,11 @@ class Topbar extends Component {
                 return (
                   <div className="buy-button">
                     <Link
-                      to="/"
+                      to="/auth-login"
                       target="_blank"
                       rel="noopener noreferrer"
                       id="buyButton"
-                      className="btn btn-primary"
+                      className="btn btn-danger"
                     >
                       Login
                     </Link>

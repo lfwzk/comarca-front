@@ -21,7 +21,7 @@ class Testi extends Component {
         {
           id: 1,
           image: client1,
-          name: "Thomas Israel",
+          name: "TESTI JS ES ",
           desc:
             "It seems that only fragments of the original text remain in the Lorem Ipsum texts used today.",
         },

@@ -21,7 +21,7 @@ class Partners extends Component {
           <Col id="partner2" lg="2" md="2" xs="6" className="text-center py-4">
             <img src={img2} className="avatar avatar-ex-sm" alt="" />
           </Col>
-
+      
           <Col
             id="partner3"
             lg="2"

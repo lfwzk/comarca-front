@@ -40,7 +40,7 @@ class Section extends Component {
                                          <span className="element text-white ">Un cowork con propósito</span>
                                          <Typist.Backspace count={30} delay={40000} />
                                          <span className="element text-white ">Un cowork con propósito</span>
-                                         <Typist.Backspace count={30} delay={40000} />
+                                         <Typist.Backspace count={0} delay={40000} />
                                          </Typist>
                                     </h4>
                                     <p className="text-white align-items-center">
