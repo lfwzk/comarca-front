@@ -54,7 +54,7 @@ class HowItWorks extends Component {
           <Container>
             {/* render Section title */}
             <SectionTitle
-              title="How It Work ?"
+              title="How It Work HOWIT WORK JS ES?"
               desc=" that can provide everything you need to generate awareness, drive traffic, connect."
             />
 
@@ -66,7 +66,7 @@ class HowItWorks extends Component {
               <Col lg="7" md="6" className="mt-4 pt-2">
                 <div className="section-title ms-lg-5">
                   <SectionTitleLeft
-                    title="Change the way you build websites"
+                    title="Change the way you build HOWIT WORK JS ES "
                     desc="You can combine all the CO MARCAtemplates into a single one, you can take a component from the Application theme and use it in the Website."
                     features={this.state.features}
                     class=""

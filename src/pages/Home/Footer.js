@@ -11,7 +11,7 @@ class Footer extends Component {
                         <Row className="justify-content-center">
                             <Col sm={8}>
                                 <div className="text-sm-start">
-                                    <p className="mb-0">© {new Date().getFullYear()} CO MARCA . Develop with <i className="mdi mdi-heart text-danger"></i> by <a href="https://themesbrand.com/" rel="noreferrer" target="_blank" className="text-reset">ThemesBrand</a>.</p>
+                                    <p className="mb-0">© {new Date().getFullYear()} CO MARCA . Develop with <i className="mdi mdi-heart text-danger"></i> by <a href="COMARCA.COM" rel="noreferrer" target="_blank" className="text-reset">CO MARCA</a>.</p>
                                 </div>
                             </Col>
 

@@ -16,7 +16,7 @@ class Faq extends Component {
                                 <div className="d-flex">
                                     <i><FeatherIcon icon="help-circle" className="fea icon-ex-md text-primary me-2 mt-1" /></i>
                                     <div className="flex-1">
-                                        <h5 className="mt-0">How our <span className="text-primary">CO MARCA </span> work ?</h5>
+                                        <h5 className="mt-0">FAQ JS ES <span className="text-primary">CO MARCA </span> work ?</h5>
                                         <p className="answer text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.</p>
                                     </div>
                                 </div>
